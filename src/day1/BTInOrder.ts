@@ -13,8 +13,5 @@ function walk(curr: BinaryNode<number>, path: number[]): number[] {
 }
 
 export default function in_order_search(head: BinaryNode<number>): number[] {
-    var path: number[] = [];
-    path = walk(head, path);    
-
-    return path;
+    return walk(head, []);    
 }
